@@ -1,13 +1,13 @@
 {
 	"presets": [
 		[
-			"env"
+			"@babel/env"
 		]
 	],
 	"env": {
 		"test": {
 			"presets": [
-				"env"
+				"@babel/env"
 			]
 		}
 	}

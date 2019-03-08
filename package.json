@@ -2,17 +2,20 @@
   "name": "es6-router",
   "version": "3.1.6",
   "description": "Simple ES6 client side router",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "directories": {
     "test": "test"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "babel-jest": "^23.0.1",
-    "babel-preset-env": "^1.5.2",
     "jest": "^23.1.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "babel lib/index.js -d dist --copy-files"
   },
   "repository": {
     "type": "git",
